@@ -2,7 +2,7 @@ const waetherForm = document.querySelector('form');
 const search = document.querySelector('input');
 const messageOne = document.querySelector('#message-1')
 const messageTwo = document.querySelector('#message-2')
-
+ 
 
 waetherForm.addEventListener('submit',(event) => {
     event.preventDefault();

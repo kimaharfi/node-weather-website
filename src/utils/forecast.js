@@ -12,7 +12,8 @@ const getForecast = (latitude,longtitude,callback) => {
             callback('Unable to find location')
         }
         else{
-            callback(undefined, `${body.current.weather_descriptions}. It is currently ${body.current.temperature} degrees out. There is a ${body.current.precip}% change of rain`)
+            console.log(body)
+            callback(undefined, `${body.current.weather_descriptions}. It is currently ${body.current.temperature} degrees out, but feels like ${body.current.feelslike} degrees. There is a ${body.current.precip}% change of rain`)
         }
     }) 
 }
